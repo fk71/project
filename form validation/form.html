@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="form.js" defer></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>Signup</header>
+		<form action="#">
+			<div class="field name-field">
+				<div class="input-field">
+					<input type="text" placeholder="Full name" class="name">
+				</div>
+				<span class="error name-error">
+					<i class="bi bi-exclamation-circle error-icon"></i>
+					<p>please enter a valid name</p>
+				</span>
+			</div>
+			<div class="field email-field">
+				<div class="input-field">
+					<input type="text" placeholder="Email" class="email">
+				</div>
+				<span class="error email-error">
+					<i class="bi bi-exclamation-circle error-icon"></i>
+					<p>please enter a valid email</p>
+				</span>
+			</div>
+			<div class="field password-field">
+				<div class="input-field">
+					<input type="password" placeholder="Password" class="password">
+					<i class="bi bi-eye-slash show-hide"></i>
+				</div>
+				<span class="error password-error">
+					<i class="bi bi-exclamation-circle error-icon"></i>
+					<p>first character must be a letter,must contain atleast 4 character and no more than 15 character.</p>
+				</span>
+			</div>
+			<div class="field cpassword-field">
+				<div class="input-field">
+					<input type="password" placeholder="Confirm password" class="cpassword">
+					<i class="bi bi-eye-slash show-hide"></i>
+				</div>
+				<span class="error cpassword-error">
+					<i class="bi bi-exclamation-circle error-icon"></i>
+					<p>password don't match</p>
+				</span>
+			</div>
+			<div class="buttons">
+			<div class="btn-field login">
+				<button>login</button>
+			</div>
+			<div class="btn-field logout">
+				<button>log out</button>
+			</div>
+			</div>
+
+		</form>
+	</div>
+	
+ </body>
+
+ </html>

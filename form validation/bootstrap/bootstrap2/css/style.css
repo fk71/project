@@ -1,0 +1,291 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+
+/* navbar */
+
+#top_nav {
+  background-color: #daac00 !important;
+  padding: 0 8%;
+}
+#logo_img {
+  width: 90px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: rgb(255 255 255);
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+#searchBox {
+  background-color: #fcc302;
+  color: #fff;
+  border: 0px;
+  border-radius: 0;
+  box-shadow: 5px 10px 11px 0px #00000021;
+  position: relative;
+  left: 37px;
+}
+#searchBox::placeholder {
+  color: #fff;
+}
+
+#searchBtn {
+  position: relative;
+  z-index: 99;
+  background-color: #00bec9;
+  color: #fff;
+  border: 0px;
+  border-radius: 0;
+  width: 60px;
+}
+
+@media (max-width: 992px) {
+  #searchForm {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin: 15px 38%;
+    padding: 0 5.5%;
+  }
+}
+/* Banner */
+
+#banner {
+  background-color: #fcc302;
+  padding-bottom: 20px;
+}
+#banner_Text h1 {
+  color: #fff;
+  font-size: 70px;
+  margin-top: 70px;
+}
+#banner_Text p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#banner_Btn1 {
+  background-color: #00bec9;
+  border: 2px solid #00bec9;
+  color: #fff;
+}
+#banner_Btn2 {
+  color: #fff;
+  border: 2px solid #fff;
+  margin-left: 15px;
+}
+#img {
+  width: 400px;
+  margin: 50px 0 0 40px;
+}
+@media (max-width: 1300px) {
+  #banner_Text h1 {
+    font-size: 50px;
+  }
+  #banner_Text p {
+    font-size: 15px;
+  }
+  #img {
+    width: 332px;
+  }
+}
+@media (max-width: 910px) {
+  #banner_Text h1 {
+    font-size: 40px;
+  }
+
+  #img {
+    width: 390px;
+    margin: 30px 0 0 30px;
+  }
+}
+@media (max-width: 400px) {
+  #banner_Text h1 {
+    font-size: 30px;
+  }
+}
+/* banner our service */
+
+#banner2_Text {
+  padding: 15% 0 4% 0;
+}
+#banner2_Text h2 {
+  font-weight: 700;
+}
+#banner2_Btn {
+  background-color: #fcc302;
+  color: #fff;
+  border: 2px solid #fcc302;
+}
+
+#img2 {
+  position: relative;
+  z-index: 99;
+  padding-top: 10%;
+  filter: sepia(100%);
+}
+#background {
+  width: 251px;
+  height: 251px;
+  background-color: #daac00;
+  position: relative;
+  left: -7px;
+  top: -233px;
+  margin-bottom: -120px;
+  /* z-index: 1; */
+}
+@media (max-width: 1300px) {
+  #background {
+    background-color: transparent;
+  }
+  #img2 {
+    position: block;
+    margin-top: 10%;
+	margin-left: 4%;
+  }
+  #banner2_Text {
+    padding: 7% 0 4% 0;
+  }
+}
+@media (max-width: 769px) {
+  #img2 {
+    margin-top: 0px;
+	margin-left: 0px;
+  }
+}
+
+/* counter */
+#counter {
+  background-color: #fcc302;
+  background-image: url("../image/animal_3.jpg");
+  background-size: cover;
+  background-position: 10% 40%;
+  background-color: #fcc302;
+  background-blend-mode: soft-light;
+  /* padding-left: 10%; */
+  padding-top: 40px;
+  padding-bottom: 110px;
+  margin-top: -70px;
+}
+#counter p {
+  font-size: 45px;
+  color: #fff;
+}
+@media (max-width: 450px) {
+
+	#counter p {
+  font-size: 35px;
+}
+
+}
+/* blog */
+#blog{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+#blog_title h2{
+	font-weight: bolder;
+	font-size: 50px;
+
+}
+#blog_title p{
+	font-size: 25px;
+	margin-bottom: 70px;
+}
+.artical_heading {
+	font-weight: 20px;
+}
+.artical_text {
+	border: 2px solid rgb(190, 189, 189);
+	border-top: none;
+	padding: 15px;
+
+}
+.artical_date {
+	color: #00bec9;
+}
+.artical_link {
+	text-decoration: none;
+	color: #00bec9;
+
+}
+/* footer */
+
+#footer {
+	background-color: #343434;
+	  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#footer a,h3 {
+
+	color: #fff;
+	text-decoration: none;
+	padding-top: 2px;
+}
+.footer_searchpara {
+  color: #fff;
+}
+#searchBox2 {
+	position: relative;
+	left: 50px;
+  background-color: #fcc302;
+  border: none;
+  /* width: 350px; */
+  /* max-width: 350px; */
+  color: #fff;
+  margin-left: 49px;
+  box-shadow: none;
+  border-radius: 0;
+}
+#searchForm2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+#searchBtn2 {
+  /* position: relative; */
+  z-index: 99;
+  background-color: #00bec9;
+  color: #fff;
+  border: 0px;
+  border-radius: 0;
+  width: 60px;
+  /* left: 18px; */
+}
+.icon {
+  font-size: 25px;
+  padding-left: 10px;
+  color: #fff;
+
+}
+
+.copyright {
+  padding-top: 60px;
+color: white;
+margin-bottom: -50px;
+text-align: center;
+
+}
+
+@media (max-width: 768px) {
+  #footer_link1 {
+	padding-bottom: 45px;
+}
+#footer_link2 {
+	padding-bottom: 45px;
+}
+
+#searchForm2 {
+  position: relative;
+left: -100px;
+width: 383px;
+padding-right: 56px;
+}
+
+}

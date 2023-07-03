@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(web_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+nav {
+
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav img {
+
+    width: 150px;
+}
+
+.nav_link {
+
+    flex: 1;
+    text-align: right;
+}
+
+.nav_link ul li {
+
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-transform: uppercase;
+
+}
+
+.nav_link ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.nav_link ul li::after {
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease-in-out
+}
+
+.nav_link ul li:hover::after {
+
+    width: 100%;
+
+}
+
+.textbox {
+
+    width: 90%;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.textbox h1 {
+
+    font-size: 62px;
+    border: 2px solid black
+}
+
+.textbox p {
+    font-size: 14px;
+    margin: 10px 0 40px;
+
+}
+
+.button {
+
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.button:hover {
+
+    border: #f44336;
+    background-color: #f44336;
+
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 860px) {
+    .nav_link ul li {
+        display: block;
+
+    }
+
+    .nav_link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.183);
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .textbox h1 {
+
+        font-size: 24px;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
